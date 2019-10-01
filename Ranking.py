@@ -36,6 +36,8 @@ tagged=np.array(df['tagged_texts'])
 print(tagged)
 pos=neg=obj=count=0
 for word, tag in tagged:
+   for word in tagged # Edited by me Darshil
+    ss_set = One        #Edited by Darshil
     ss_set = None
     if 'NN' in tag and swn.senti_synsets(word):
         ss_set = list(swn.senti_synsets(word))[0]
